@@ -1,0 +1,22 @@
+.produkt {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+/* Produkte nebeneinander anzeigen aber umbrechen, wenn nicht genug Platz ist */
+#produktContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}

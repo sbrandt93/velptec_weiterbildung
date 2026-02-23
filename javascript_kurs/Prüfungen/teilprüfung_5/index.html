@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verwaltung von Veranstaltungseinladungen</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Verwaltung von Veranstaltungseinladungen</h1>
+    <div id="dateInfo"></div>
+    <form id="eventForm">
+    <label for="eventTitle">Veranstaltungstitel:</label>
+    <input type="text" id="eventTitle" name="eventTitle">
+    <div id="eventTitleError" class="error"></div>
+    <label for="eventDate">Datum:</label>
+    <input type="date" id="eventDate" name="eventDate">
+    <div id="eventDateError" class="error"></div>
+    <label for="eventTime">Uhrzeit:</label>
+    <input type="time" id="eventTime" name="eventTime">
+    <div id="eventTimeError" class="error"></div>
+    <label for="eventLocation">Ort:</label>
+    <input type="text" id="eventLocation" name="eventLocation">
+    <div id="eventLocationError" class="error"></div>
+    <label for="eventDescription">Beschreibung:</label>
+    <textarea id="eventDescription" name="eventDescription"></textarea>
+    <div id="eventDescriptionError" class="error"></div>
+    <h3>Teilnehmerliste</h3>
+    <ul id="participantList"></ul>
+    <div id="participantListError" class="error"></div>
+    <button type="submit" id="sendInvitationsButton">Einladungen versenden</button>
+   </form>
+   <br>
+   <form id="addParticipantForm">
+    <h3>Teilnehmer hinzufügen</h3>
+    <label for="firstName">Vorname:</label>
+    <input type="text" id="firstName" name="firstName">
+    <div id="firstNameError" class="error"></div>
+    <label for="lastName">Nachname:</label>
+    <input type="text" id="lastName" name="lastName">
+    <div id="lastNameError" class="error"></div>
+    <label for="email">E-Mail-Adresse:</label>
+    <input type="email" id="email" name="email">
+    <div id="emailError" class="error"></div>
+    <button type="submit" id="addParticipantButton">Teilnehmer hinzufügen</button>
+   </form>
+</body>
+</html> 

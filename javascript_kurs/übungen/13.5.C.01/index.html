@@ -1,0 +1,49 @@
+<!-- Übungen 13.5.C.01
+Aufgabe: Asynchrones JavaScript
+
+Entwickle eine Webanwendung, die Nutzereingaben über ein Formular entgegennimmt, um eine personalisierte Begrüßung basierend auf der aktuellen Uhrzeit und dem Namen des Nutzers zu generieren. 
+Die Anwendung soll außerdem die Fähigkeit haben, Daten von einer externen API zu beziehen und diese Daten abhängig von der Nutzereingabe zu filtern. 
+Verwende die Fetch-API und async/await für asynchrone Anfragen an eine Test-API, um eine Liste von Aufgaben zu erhalten. Die Anwendung soll folgende Funktionalitäten aufweisen:  
+
+a) Erstelle ein HTML-Formular mit einem Textfeld für den Namen des Nutzers und einem Submit-Button. Binden ein Event an den Submit-Button, das die Eingaben verarbeitet, ohne die Seite neu zu laden. 
+b) Implementiere eine Funktion, die eine personalisierte Begrüßung in einem <div>-Element auf der Seite anzeigt. 
+Die Begrüßung soll "Guten Morgen, [Name]!" von 5:00 bis 11:59, "Guten Tag, [Name]!" von 12:00 bis 17:59 und "Guten Abend, [Name]!" von 18:00 bis 4:59 ausgeben. 
+c) Verwende die Fetch-API und async/await, um eine Liste von Aufgaben von der Test-API https://jsonplaceholder.typicode.com/todos zu beziehen. Zeige die ersten fünf Aufgaben in einer Liste auf der Seite an. 
+d) Erweitere die Anwendung, sodass der Nutzer eine Zahl zwischen 1 und 200 eingeben kann, um eine spezifische Aufgabe aus der Liste der abgerufenen Aufgaben anzuzeigen. Verarbeite diese Eingabe im selben Formular wie den Namen. -->
+
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Übung 13.5.C.01</title>
+</head>
+<body>
+    <h1>Personalisierte Begrüßung und Aufgabenliste</h1>
+    <div id="greeting-form">
+        <h2>Geben Sie Ihren Namen und eine Aufgabennummer ein</h2>
+        <form id="user-form">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" name="user-name" required>
+            <br>
+            <label for="task-number">Aufgabennummer (1-200):</label>
+            <input type="number" id="task-number" name="task-number" min="1" max="200">
+            <br>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+    <div id="greeting-result">
+        <h2>Begrüßung:</h2>
+        <p id="greeting-display">Bitte Name eingeben und auf "Absenden" klicken.</p>
+    </div>
+    <div id="tasks-list">
+        <h2>Aufgabenliste:</h2>
+        <ul id="tasks-display">
+        </ul>
+    </div>
+</body>
+</html>

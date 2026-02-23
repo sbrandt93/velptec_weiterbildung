@@ -1,0 +1,3 @@
+# Aufgabe: Variablen und Syntax 
+
+Erstelle eine einfache HTML-Seite mit dem Titel "Meine erste JavaScript-Seite" und binde eine externe JavaScript-Datei ein. In der JavaScript-Datei definiere zwei Variablen: eine mit dem Namen benutzerName, die deinen Namen als Zeichenkette speichert, und eine zweite Variable alter, die dein Alter als Zahl speichert. Schreibe dann eine Anweisung, die eine Nachricht im Konsolenfenster ausgibt, welche deinen Namen und dein Alter in einem vollständigen Satz zusammenfasst. Die Nachricht sollte lauten: "Hallo, mein Name ist [dein Name] und ich bin [dein Alter] Jahre alt."  

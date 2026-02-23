@@ -1,0 +1,16 @@
+img {
+    max-width: auto;
+    height: 500px;
+}
+
+#produktContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+    color: cadetblue;
+}

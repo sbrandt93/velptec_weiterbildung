@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Übung 13.5.Ü.01</title>
+</head>
+<body>
+    <h1>Erinnerungs-App</h1>
+    <div id="current-time">
+        <h2>Aktuelle Uhrzeit:</h2>
+        <p id="time-display">Lade...</p>
+    </div>
+    <div id="reminder-form">
+        <h2>Erinnerung setzen</h2>
+        <form id="set-reminder-form">
+            <label for="event-name">Ereignisname:</label>
+            <input type="text" id="event-name" name="event-name" required>
+            <br>
+            <label for="event-date">Datum:</label>
+            <input type="date" id="event-date" name="event-date" required>
+            <br>
+            <label for="event-time">Uhrzeit:</label>
+            <input type="time" id="event-time" name="event-time" required>
+            <br>
+            <button type="submit">Erinnerung setzen</button>
+        </form>
+    </div>
+    <div id="reminders">
+        <h2>Benachrichtigungen:</h2>
+        <ul id="reminders-list"></ul>
+    </div>
+</body>
+</html>

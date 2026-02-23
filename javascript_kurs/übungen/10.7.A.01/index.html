@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Übung 10.4.Ü.01</title>
+</head>
+<body>
+    <h1>Übung 10.4.Ü.01</h1>
+    <h2>Aufgabe: DOM </h2>
+    <form onsubmit="event.preventDefault(); sucheProdukte();">
+        <input type="text" id="suchInput" placeholder="Produktname suchen">
+        <button type="submit">Suchen</button>
+    </form>
+    <!-- Buttons zum Sortieren mit Icon -->
+    <button onclick="sortiereProdukteNachPreis(true)">▲ Preis aufsteigend</button>
+    <button onclick="sortiereProdukteNachPreis(false)">▼ Preis absteigend</button>
+    <br><br>
+    <!-- Eingabefeld und Button zum Entfernen eines Produkts nach ID -->
+    <input type="number" id="entferneIdInput" placeholder="Produkt ID entfernen">
+    <button onclick="entferneProduktNachId()">Entfernen</button>
+    <!-- Container für die Produktanzeige -->
+    <div id="produktContainer"></div>
+</body>
+</html>

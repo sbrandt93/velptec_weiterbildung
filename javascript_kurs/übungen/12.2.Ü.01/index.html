@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Übung 12.2.Ü.01</title>
+</head>
+<body>
+    <h1>Übung 12.2.Ü.01</h1>
+    <h2>Aufgabe: Formulare</h2>
+    <!-- Formular für die Anmeldung -->
+    <form id="formular">
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname" required>
+        <div id="vornameError" class="error-message"></div>
+        <br>
+        <label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" name="nachname" required>
+        <div id="nachnameError" class="error-message"></div>
+        <br>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error-message"></div>
+        <br>
+<!-- Workshops -->
+        <fieldset>
+            <legend>Workshops</legend>
+            <input type="checkbox" id="workshop1" name="workshops" value="workshop1">
+            <label for="workshop1">Einführung in HTML</label><br>
+            <input type="checkbox" id="workshop2" name="workshops" value="workshop2">
+            <label for="workshop2">CSS Grundlagen</label><br>
+            <input type="checkbox" id="workshop3" name="workshops" value="workshop3">
+            <label for="workshop3">JavaScript Basics</label><br>
+        <br>
+        <div id="workshopError" class="error-message"></div>
+        <button type="button" id="anmeldenButton">Anmelden</button>
+    </form>
+</body>
+</html>

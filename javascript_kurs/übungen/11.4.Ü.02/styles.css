@@ -1,0 +1,20 @@
+img {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 10px;
+    /* nebeneinander */
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}

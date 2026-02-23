@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webanwendung zur Aufgabenplanung</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Aufgabenplaner</h1>
+    <form id="taskForm">
+        <label for="description" >Aufgabenbeschreibung:</label><br>
+         <textarea id="description" name="description" rows="5"></textarea><br><br>
+        <label for="dueDate">Fälligkeitsdatum:</label><br>
+        <input type="date" id="dueDate" name="dueDate" ><br><br>  
+        <label for="priority">Priorität:</label><br>
+        <select id="priority" name="priority" >
+            <option value="">--Bitte wählen--</option>
+            <option value="hoch">Hoch</option>
+            <option value="mittel">Mittel</option>
+            <option value="niedrig">Niedrig</option>
+        </select><br><br>     
+        <button type="submit">Aufgabe hinzufügen</button>
+    </form>
+    <div id="errorMessage" style="color: red;"></div>
+    <h2>Aufgabenliste</h2>
+    <ul id="taskList"></ul>
+</body>
+</html> 

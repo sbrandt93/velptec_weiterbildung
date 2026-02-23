@@ -1,0 +1,52 @@
+<!-- Übungen 12.3.Ü.02
+Aufgabe: Formulare
+
+Entwickle ein JavaScript-Programm, das ein Formular zur Erfassung von Teilnehmerdaten für einen Online-Kochkurs verwaltet. 
+Das Formular soll Felder für den Namen, die E-Mail-Adresse, das bevorzugte Küchenthema (z.B. italienisch, asiatisch, vegetarisch) und ob der Teilnehmer ein Anfänger ist oder nicht, enthalten. Verwende dabei folgende Anforderungen:
+
+a) Erstelle ein HTML-Formular mit den entsprechenden Eingabefeldern, inklusive eines Dropdown-Menüs für das Küchenthema und einer Checkbox für die Anfängeroption. 
+   Stelle sicher, dass das Formular einen "Absenden"-Button hat.
+b) Schreibe eine JavaScript-Funktion, die beim Absenden des Formulars aufgerufen wird. Diese Funktion soll überprüfen, ob alle Felder ausgefüllt wurden. 
+   Falls das Feld für den Namen oder die E-Mail-Adresse leer ist, soll eine entsprechende Fehlermeldung angezeigt werden, ohne das Formular abzusenden.
+c) Falls das Formular korrekt ausgefüllt wurde, soll eine Bestätigungsnachricht angezeigt werden, die den Namen des Teilnehmers und das gewählte Küchenthema enthält. 
+   Verwende dazu das Event "submit" und verhindere das standardmäßige Absenden des Formulars mit event.preventDefault().
+d) Implementiere eine Funktion, die prüft, ob der Teilnehmer ein Anfänger ist. Wenn ja, füge der Bestätigungsnachricht hinzu, dass der Teilnehmer zusätzliche Ressourcen per E-Mail erhalten wird. -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Übung 12.3.Ü.02</title>
+</head>
+<body>
+    <h1>Übung 12.3.Ü.02</h1>
+    <h2>Aufgabe: Formulare</h2>
+    <!-- Formular für Teilnehmerdaten eines Online-Kochkurses -->
+    <form id="cookingCourseForm">
+        <label for="participantName">Name:</label>
+        <input type="text" id="participantName" name="participantName" required>
+        <div id="participantNameError" class="error-message"></div>
+        <br>
+        <label for="participantEmail">E-Mail-Adresse:</label>
+        <input type="email" id="participantEmail" name="participantEmail" required>
+        <div id="participantEmailError" class="error-message"></div>
+        <br>
+        <label for="cuisineTheme">Bevorzugtes Küchenthema:</label>
+        <select id="cuisineTheme" name="cuisineTheme" required>
+            <option value="">Bitte wählen</option>
+            <option value="italienisch">Italienisch</option>
+            <option value="asiatisch">Asiatisch</option>
+            <option value="vegetarisch">Vegetarisch</option>
+        </select>
+        <div id="cuisineThemeError" class="error-message"></div>
+        <br>
+        <label for="isBeginner">Anfänger:</label>
+        <input type="checkbox" id="isBeginner" name="isBeginner">
+        <br>
+        <button type="submit" id="submitCookingCourseButton">Absenden</button>
+    </form>
+</body>
+</html>

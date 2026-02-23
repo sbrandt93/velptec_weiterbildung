@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Übung 12.2.Ü.02</title>
+</head>
+<body>
+    <h1>Übung 12.2.Ü.02</h1>
+    <h2>Aufgabe: Formulare</h2>
+    <!-- Formular für Benutzerfeedback -->
+    <form id="feedbackForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div id="nameError" class="error-message"></div>
+        <br>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error-message"></div>
+        <br>
+        <fieldset>
+            <legend>Zufriedenheit</legend>
+            <input type="radio" id="zufrieden" name="satisfaction" value="zufrieden" required>
+            <label for="zufrieden">Zufrieden</label><br>
+            <input type="radio" id="neutral" name="satisfaction" value="neutral">
+            <label for="neutral">Neutral</label><br>
+            <input type="radio" id="unzufrieden" name="satisfaction" value="unzufrieden">
+            <label for="unzufrieden">Unzufrieden</label><br>
+        </fieldset>
+        <div id="satisfactionError" class="error-message"></div>
+        <br>
+        <label for="comments">Kommentare:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+        <div id="commentsError" class="error-message"></div>
+        <br>
+        <button type="button" id="submitFeedbackButton">Feedback absenden</button>
+</body>
+</html>
