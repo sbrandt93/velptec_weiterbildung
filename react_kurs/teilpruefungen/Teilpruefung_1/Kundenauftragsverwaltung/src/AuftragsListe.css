@@ -1,0 +1,233 @@
+/* AuftragsListe.css - Styling für die Kundenauftragsverwaltung */
+
+/* Container für die gesamte Komponente */
+.auftrags-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auftrags-container h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 15px;
+}
+
+.auftrags-container h2 {
+  color: #34495e;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Ladeanzeige während API-Anfrage */
+.loading-indicator {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Section-Styling */
+.neuer-auftrag-section,
+.filter-section,
+.auftrags-liste-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Formular-Styling */
+.auftrag-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Button zum Hinzufügen */
+.btn-hinzufuegen {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hinzufuegen:hover {
+  background-color: #219a52;
+  transform: translateY(-2px);
+}
+
+/* Filter-Styling */
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #555;
+}
+
+.filter-group select {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+  min-width: 180px;
+  transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Aufträge-Zähler */
+.auftrag-count {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* Keine Aufträge gefunden */
+.keine-auftraege {
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Tabellen-Styling */
+.auftrags-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.auftrags-tabelle th,
+.auftrags-tabelle td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.auftrags-tabelle th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.auftrags-tabelle tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.auftrags-tabelle tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+/* Status-Badge Styling */
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.offen {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-badge.abgeschlossen {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Button für Statusänderung */
+.btn-status {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-status:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .auftrag-form {
+    flex-direction: column;
+  }
+  
+  .form-group {
+    min-width: 100%;
+  }
+  
+  .auftrags-tabelle {
+    font-size: 0.9rem;
+  }
+  
+  .auftrags-tabelle th,
+  .auftrags-tabelle td {
+    padding: 8px 10px;
+  }
+}

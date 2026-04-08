@@ -1,0 +1,99 @@
+.post-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.post-form .back-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.post-form .back-link:hover {
+  text-decoration: underline;
+}
+
+.post-form h1 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.post-form form {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.post-form .form-group {
+  margin-bottom: 20px;
+}
+
+.post-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.post-form input:disabled,
+.post-form textarea:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.post-form button {
+  width: 100%;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.post-form button:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.post-form button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.post-form .error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.post-form .success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

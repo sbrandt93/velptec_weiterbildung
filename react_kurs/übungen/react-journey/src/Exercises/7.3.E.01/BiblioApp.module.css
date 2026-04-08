@@ -1,0 +1,362 @@
+/* e) CSS Module für ansprechendes Layout */
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 300px;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navLink {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.activeNavLink {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: bold;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.logoutButton {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main */
+.main {
+  padding: 20px;
+  background-color: #ecf0f1;
+  border-radius: 0 0 8px 8px;
+  min-height: 250px;
+}
+
+/* Home */
+.home {
+  text-align: center;
+}
+
+.home h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.greeting {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.homeNav {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.homeNav h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.homeNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.homeNav li {
+  margin: 10px 0;
+}
+
+.homeLink {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.homeLink:hover {
+  color: #2c3e50;
+}
+
+/* Login */
+.login {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.loginForm {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.submitButton:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+}
+
+/* Buchliste */
+.buchListe h2 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.filter {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter span {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 500;
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filterButton {
+  background: #ecf0f1;
+  border: 2px solid transparent;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.filterButton:hover {
+  background: #ddd;
+}
+
+.activeFilter {
+  background: #3498db;
+  color: white;
+  border-color: #2980b9;
+}
+
+.buchGrid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.buchCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buchCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.buchLink {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.buchLink h3 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.autor {
+  margin: 0 0 10px 0;
+  color: #777;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.kategorie {
+  display: inline-block;
+  background: #ecf0f1;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.noBuecher {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* Buchdetail */
+.buchDetail {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 0;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.backButton:hover {
+  color: #2c3e50;
+}
+
+.buchDetailCard {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.buchDetailCard h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.detailAutor {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.detailKategorie {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.beschreibung {
+  color: #333;
+  line-height: 1.6;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  font-weight: 500;
+}

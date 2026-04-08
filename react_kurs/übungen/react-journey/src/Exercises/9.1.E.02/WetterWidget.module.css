@@ -1,0 +1,79 @@
+.container {
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.widget {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.icon {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.temperatur {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.status {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.temperaturControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tempButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tempButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.select option {
+  background-color: #667eea;
+  color: white;
+}

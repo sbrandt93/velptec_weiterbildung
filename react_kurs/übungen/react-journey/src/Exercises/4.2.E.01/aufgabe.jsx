@@ -1,0 +1,12 @@
+// Aufgabe: Styling in React 
+
+// Entwickle eine React-Komponente UserProfile, die folgende Anforderungen erfüllt: 
+
+// a) Verwende CSS Modules für das Styling der Komponente. Definiere zwei Klassen in der CSS-Modul-Datei: 
+//    .profileContainer, die eine Box mit einem Schatten, abgerundeten Ecken und einem Padding von 20px darstellt, und .profilePicture, die ein Bild mit einer Breite von 100px und abgerundeten Ecken darstellt. 
+// b) Die Komponente soll Props für den Namen des Benutzers (userName), die E-Mail (userEmail) und das Profilbild (userImage) akzeptieren. 
+// c) Implementiere einen State isExpanded, der steuert, ob zusätzliche Informationen (z.B. die E-Mail-Adresse) unter dem Namen angezeigt werden sollen. Standardmäßig ist isExpanded false.
+// d) Füge einen Button hinzu, der den isExpanded State toggelt. Wenn isExpanded true ist, soll der Button "Weniger anzeigen" anzeigen, andernfalls "Mehr anzeigen".
+// e) Nutze den useEffect Hook, um eine Konsolenausgabe zu erzeugen, die den aktuellen Zustand von isExpanded anzeigt, immer wenn sich isExpanded ändert. 
+// f) Verwende das ref-Attribut, um bei jedem Klick auf den Toggle-Button den Fokus auf diesen Button zu setzen. 
+
